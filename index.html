@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> AL-RAEE COFFEE</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f9f0;
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #2f4f2f;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+       }
+
+
+
+              .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            border-bottom: 2px solid #2f4f2f;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* عرض منتجين في كل صف */
+        gap: 20px; /* المسافة بين المنتجات */
+    }
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+@media (max-width: 768px) {
+        .grid {
+            grid-template-columns: 1fr; /* في الشاشات الصغيرة، منتج واحد في كل صف */
+        }
+    }
+        .card img {
+        width: 100%; /* اجعل العرض يتناسب مع عرض البطاقة */
+        height: auto; /* الحفاظ على نسبة الطول للعرض */
+        border-radius: 10px;
+    }
+        .card h3 {
+            background-color: #2f4f2f;
+            color: #fff;
+            margin: 0;
+            padding: 10px;
+        }
+        .card p {
+            padding: 10px;
+        }
+        .price {
+            font-size: 1.2em;
+            color: #3cb371;
+            font-weight: bold;
+        }
+        .cta {
+            margin: 10px 0;
+            padding: 10px 15px;
+            background-color: #2f4f2f;
+            color: #fff;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .cta:hover {
+            background-color: #3cb371;
+        }
+ .marquee {
+            background-color: #e8ffe8;
+            color: #2f4f2f;
+            padding: 10px 0;
+            overflow: hidden;
+            white-space: nowrap;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .marquee span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 10s linear infinite;
+        }
+.marquee {
+    background-color: #e8ffe8;
+    color: #2f4f2f;
+    padding: 10px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    direction: ltr; /* اجعل اتجاه النص من اليسار إلى اليمين */
+    text-align: right; /* النص يظهر بدايةً من الجهة اليمنى */
+}
+
+.marquee span {
+    display: inline-block;
+    padding-left: 0; /* إزالة الحشو الإضافي */
+    animation: marquee 20s linear infinite; /* ضبط الحركة بسرعة مناسبة */
+    font-size: 1.5em; /* تكبير حجم النص */
+    font-weight: bold; /* زيادة سماكة النص */
+    color: #2f4f2f;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(-100%); /* البداية من الخارج يسار الشاشة */
+    }
+    to {
+        transform: translateX(100%); /* التحرك إلى الخارج يمين الشاشة */
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1> AL-RAEE COFFEE</h1>
+        <h1>استمتع بأفضل أنواع القهوة والخدمات المميزة</h1>
+    </header>
+    <div class="marquee">
+        <span>✨عرض خاص: احصل على خصم 20% عند شرائك أكثر من منتج !  | ✨ دورات تدريبية لمحبي القهوة تبدأ الآن! 📚 | ✨ جرب ماكينات الإسبريسو الجديدة لدينا</span>
+    </div>
+  <!-- Search Bar -->
+        <section class="search-bar" style="padding: 20px; background-color: #e8ffe8; text-align: center;">
+            <h2 style="color: #2f4f2f;">ابحث عن منتجك المفضل</h2>
+            <form>
+                <input type="text" placeholder="اكتب اسم المنتج..." style="padding: 10px; width: 80%; max-width: 600px; border: 1px solid #ccc; border-radius: 5px;">
+                <button type="submit" style="padding: 10px 20px; background-color: #2f4f2f; color: white; border: none; border-radius: 5px; margin-top: 10px;">بحث</button>
+            </form>
+        </section>
+
+
+    <div class="container">
+        <section class="section">
+            
+            <div class="grid">
+                <div class="card">
+                    <img src="ar5.jpeg" alt="NEAPOLIS HAZELNUT">
+                    <h3>NEAPOLIS HAZELNUT</h3>
+
+                              
+<p>نيابلوس اسبرسو بنكهة البندق </p>
+                    <p class="price">27 ₪</p>
+                   <a href="hazelnut.html" class="cta">تعرف على المنتج</a>
+                </div>
+                <div class="card">
+                    <img src="ar.jpeg" alt="قهوة مطحونة">
+                    <h3>القهوة الشقراء</h3>
+                    <p>توازن خفيف بمذاق مميز </p>
+                    <p class="price">32₪</p>
+                   <a href="SHAQRA.HTML" class="cta">تعرف على المنتج</a>
+                </div>
+                <div class="card">
+                    <img src="ar1.jpeg" alt="ماكينة إسبريسو">
+                    <h3>NEAPOLIS CHERRY</h3>
+                    <p>نيابلوس اسبرسو بنكهة الكرز</p>
+                    <p class="price">27 ₪</p>
+                    <a href="CHERRY.HTML" class="cta">تعرف على المنتج</a>
+                </div>
+
+                <div class="card">
+                    <img src="ar2.jpeg" alt="كبسولات القهوة">
+                    <h3>قهوة وسط</h3>
+                    <p>توازن مثالي بين النكهه والكثافة</p>
+                    <p class="price">28 ₪</p>
+                    <a href="MIDD.HTML" class="cta">تعرف على المنتج </a>
+                </div>
+
+                <div class="card">
+                    <img src="ar3.jpeg" alt="">
+                    <h3> NEAPOLIS CHOCOLATE</h3>
+                    <p>نيابلوس اسبرسو بنكهة الشوكلاتة</p>
+                    <p class="price">25 ₪</p>
+                    <a href="CHOCOLATE.HTML" class="cta">تعرف على المنتج </a>
+                </div>
+
+                <div class="card">
+                    <img src="C:\Users\Hp\Downloads\ar4.jpeg" alt="أكواب القهوة">
+                    <h3>NEAPOLIS VANILLA </h3>
+                    <p>نيابلوس اسبرسو بنكهة الفانيلا</p>
+                    <p class="price">30 ₪ </p>
+                    <a href="VANILLA.HTML" class="cta"> تعرف على المنتج</a>
+                </div>
+                <div class="card">
+                    <img src="ar6.jpeg" alt="نيابلوس  ">
+                    <h3>NEAPOLIS ESPRESSO</h3>
+                    <p>قوه النكهه , فن التحميص </p>
+                    <p class="price">40 ₪</p>
+                    <a href="ESPRESSO.HTML" class="cta">تعرف على المنتج</a>
+                </div>
+                               <div class="card">
+                    <img src="ar7.jpeg" alt="أكواب القهوة">
+                    <h3>القهوه السعوديه</h3>
+                    <p>تراث أصيل بنكهة لا تنسى </p>
+                    <p class="price">26 ₪ </p>
+                    <a href="sodee.html" class="cta"> تعرف على المنتج</a>
+                </div>
+
+            </div>
+        </section>
+           </div>
+
+        <!-- Social Media Section -->
+        <section class="social-media" style="background-color: #2f4f2f; padding: 20px; color: white; text-align: center;">
+            <h2>تابعنا على مواقع التواصل</h2>
+            <div>
+                <a href="https://www.facebook.com/share/19eW22HDzU/?mibextid=wwXIfr" style="margin: 0 10px; color: #fff;"> Facebook</a>
+                <a href="https://www.instagram.com/al_raee.coffee?igsh=ZXRjcjJudGZ4YW9z" style="margin: 0 10px; color: #fff;">📸 Instagram</a>
+                <a href="https://maps.app.goo.gl/tooyRdPFgZm1LDLX7?g_st=com.google.maps.preview.copy" style="margin: 0 10px; color: #fff;">Location </a>
+            </div>
+        </section>
+
+    </div>
+</section>
+
+</body>
+</html>
+
